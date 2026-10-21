@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forest Change | DSC 106 Project 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <p class="eyebrow">DSC 106 · Fall 2026 · Group 53</p>
+    <h1>Is The World Losing Its Forests?<small>Persuasive and Deceptive Visualization</small></h1>
+    <p class="byline">Krishang Khandelwal · Hsin Yu Ho · Kylan Huynh </p>
+    <nav aria-label="Page sections"><a href="#support">In support</a><a href="#opposition">In opposition</a><a href="#reflection">Reflection</a></nav>
+</header>
+<main>
+<section class="overview"><p class="eyebrow">The proposition</p><h2>“The world is losing its forests.”</h2><p>Source: IMF Climate Change Indicators (FAO forest indicators), 1992–2023. The charts below use forest area and (on the opposing side) forest carbon stocks.</p></section>
+<section id="support" class="stance support">
+    <div class="section-heading"><span class="section-number">1 | In support</span><h2>Forest area has decreased, and some countries lost much more than others.</h2><p>Two complementary views show the worldwide trend and the different scales of national forest loss.</p></div>
+    <article class="viz"><div class="viz-copy"><h3>Global forest area has fallen since 1992</h3><p>A global total frames the change in absolute terms, showing the amount of forest lost.</p></div>
+    <figure><img src="images/support_chart1.png" alt="Line and shaded area chart showing global forest area declining from approximately 4,221 million hectares in 1992 to 4,044 million hectares in 2023." loading="lazy"><figcaption>Figure 1. Worldwide forest area fell by around 176.81 million hectares between 1992 and 2023.</figcaption></figure>
+    <details><summary>Design decisions and rationale</summary><ul><li><strong>Truncated y-axis (−1):</strong> Beginning at 3,900M hectares makes a 4.2% decline occupy more visual space; the axis is disclosed in the source line.</li><li><strong>Prominent absolute-loss annotation (−1):</strong> Directs attention to 176.81M hectares rather than the smaller-looking percentage.</li><li><strong>Red line and shaded region (−0.5):</strong> Emphasizes loss through a consistent visual metaphor.</li><li><strong>Full 1992–2023 window (+1.5):</strong> Gives long-term context without selecting only the steepest years.</li></ul></details></article>
+    <article class="viz"><div class="viz-copy"><h3>Smaller countries can lose a larger share of forests</h3><p>Bar chart report the percentage lost and label the absolute loss.</p></div>
+    <figure><img src="images/support_chart2.png" alt="Combined line and horizontal bar charts for six selected countries, showing normalized annual forest area and percentage of forest area lost from 1992 to 2023." loading="lazy"><figcaption>Figure 2. Forest area changes from 1992 to 2023 for the top three countries with the largest absolute forest loss (million hectares) & Top three with the highest relative forest loss (%), excluding duplicates.</figcaption></figure>
+    <details><summary>Design decisions and rationale</summary><ul><li><strong>Selected countries (−1):</strong> The three largest absolute-loss cases and two largest percentage-loss cases highlight decline, excluding gainers.</li><li><strong>Indexing 1992 to 100 (+1.5):</strong> Reduces the confounding effect of country size when comparing trends.</li><li><strong>Line + bar in one figure (+2):</strong> Shows how each country's forest changed over time and how much it lost.</li><li><strong>Natural sequential reds (−0.5):</strong> Darker shades emphasize larger proportional losses.</li><li><strong>Percentage and hectare labels (+1.5):</strong> Supplies both relative and absolute context.</li></ul></details></article>
+</section>
+<section id="opposition" class="stance opposition"><div class="section-heading"><span class="section-number">2 | In opposition</span><h2>Another perspective on forests</h2><p>Your teammates can add their carbon-stock and forest-gain charts here.</p></div>
+    <div class="placeholder"><h3>Forests still hold their carbon</h3><p>Replace this panel with the carbon-stocks chart image from the checkpoint.</p><p class="filename">Suggested file: <code>images/against_carbon.png</code></p></div>
+    <div class="placeholder"><h3>Countries gaining forest area</h3><p>Replace this panel with the forest-area gains chart image.</p><p class="filename">Suggested file: <code>images/against_gains.png</code></p></div>
+    <p class="editor-note">Each teammate should add a figure, caption, and 3–5 scored design decisions like the FOR visualizations above.</p>
+</section>
+<section id="reflection" class="reflection"><span class="section-number">3 | Reflection</span><h2>What we learned about persuasion</h2><p class="editor-note">Add your group's 2–3 paragraph final reflection here. Discuss selection of countries, baseline and axis choices, the instructor's feedback about country size, and the boundary between persuasion and deception.</p></section>
+</main>
+<footer><p>DSC 106 Project 2 · Group 53 · Data: IMF Climate Change Indicators / FAO</p></footer>
+</body></html>

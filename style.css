@@ -1,0 +1,255 @@
+:root {
+    --background-color: #bdf63841;
+    --text-color: #292a2d;
+    --secondary-color: #62656b;
+    --border-color: #e7e4e0;
+    --support-color: #c6323a;
+    --opposition-color: #2a8257;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    background: var(--background-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+h1, 
+h2, 
+h3 {
+    line-height: 1.2;
+}
+
+p {
+    margin: 0.5em 0 1em;
+}
+
+a {
+    color: inherit;
+}
+
+/* Header */
+.site-header {
+    max-width: 1100px;
+    margin: auto;
+    padding: 3em 1.5em 2em;
+    text-align: center;
+}
+
+.eyebrow, .section-number {
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em auto;
+}
+
+h1 small {
+    display: block;
+    font-size: 0.4em;
+    color: var(--support-color);
+}
+
+.byline {
+    font-weight: bold;
+}
+
+.intro {
+    max-width: 650px;
+    margin: 1em auto;
+    color: var(--secondary-color);
+}
+
+/* Navigation: Flexbox from the labs */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+nav a {
+    padding: 0.5em 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--support-color);
+    border-color: var(--support-color);
+}
+
+/* Main content */
+main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 2em 3em;
+    background: white;
+    border-radius: 12px;
+}
+
+.overview {
+    text-align: center;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.overview p {
+    color: var(--secondary-color);
+}
+
+.stance {
+    padding: 3em 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-heading {
+    margin-bottom: 2em;
+}
+
+.section-heading h2 {
+    font-size: 2em;
+    margin: 0.3em 0;
+}
+
+.section-heading p {
+    color: var(--secondary-color);
+}
+
+.support .section-number {
+    color: var(--support-color);
+}
+
+.opposition .section-number {
+    color: var(--opposition-color);
+}
+
+/* Charts */
+.viz {
+    margin-bottom: 3em;
+}
+
+.viz-copy {
+    padding-left: 1em;
+    border-left: 4px solid var(--support-color);
+    margin-bottom: 1em;
+}
+
+.opposition .viz-copy {
+    border-left-color: var(--opposition-color);
+}
+
+.viz h3 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.viz-copy p {
+    color: var(--secondary-color);
+}
+
+figure {
+    margin: 0;
+    padding: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+figcaption {
+    margin-top: 1em;
+    padding-top: 0.5em;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* Design explanations */
+details {
+    margin-top: 1em;
+    padding: 1em;
+    background: var(--background-color);
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details li {
+    margin: 0.5em 0;
+}
+
+/* Teammates can replace placeholders with figures */
+.placeholder {
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border: 1px dashed var(--opposition-color);
+    border-radius: 10px;
+    background: #f6faf7;
+}
+
+.placeholder h3 {
+    margin-top: 0;
+}
+
+.filename, .editor-note {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+.reflection {
+    padding: 3em 0;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 0.85em;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .site-header {
+        padding: 2em 1em;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    main {
+        padding: 1.5em 1em;
+        border-radius: 0;
+    }
+    .stance {
+        padding: 2em 0;
+    }
+    figure {
+        padding: 0.5em;
+    }
+}
